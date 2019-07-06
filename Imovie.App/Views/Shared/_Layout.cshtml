@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>TMPS00034</title>
+<title>My App: @ViewData["Title"]</title>
 <link href="~/css/styles.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="~/css/superfish.css" media="screen">
@@ -29,14 +29,14 @@
     <div class="menu">
       <ul class="sf-menu" id="example">
         <li><a asp-action="Index">Home</a></li>
-        <li><a asp-controller="Home" asp-action="Projects">Projects</a></li>
-        <li> <a href="#">Contact</a> </li>
+        <li><a  asp-controller="Home" asp-action="Projects">Projects</a></li>
+        <li> <a asp-area="Customer" asp-controller="Dashboard" asp-action="Index">Contact</a> </li>
       </ul>
     </div>
     <div class="clear"></div>
   </div>
   <div class="clear"></div>
- @RenderSection("banner", false)
+  @RenderSection("banner", false)
 </div>
 <!---header-wrapper--->
 <div class="clear"></div>
